@@ -1,0 +1,16 @@
+\ProvidesFile{sender.lco}
+
+\RequirePackage[ngerman]{babel}
+\RequirePackage{graphicx}
+
+
+\setkomavar{fromname}{Max Musterman}
+\setkomavar{fromaddress}{Musterstraße 1\\12345 Musterstadt\\ Deutschland}
+\setkomavar{fromphone}{+49151111111}
+\setkomavar{fromemail}{info@musterman.de}
+
+\setkomavar{signature}{
+    \\[-3\baselineskip]
+    \includegraphics[width=5cm]{./signature.png} % .png mit der Unterschrift mit signature.png heißen und im selben Verzeichnis sein wie diese Datei
+}
+\renewcommand*{\raggedsignature}{\raggedright}

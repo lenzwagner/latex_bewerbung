@@ -1,0 +1,49 @@
+\documentclass[sender, paper=a4, version=last, fontsize=11pt, DIV=13, BCOR=0mm]{scrlttr2}
+\parskip3mm
+\parindent0mm % Nur falls keine eingerückten Zeilen erwünscht sind
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+
+% Schriftart festlegen
+\usepackage{mathptmx} %helvet für Helvetica oder lmodern für Latin Modern oder mathptmx für Times
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+% Seitenlayout:
+\usepackage{changepage}
+%\changepage{Texthöhe}{Textbreite}{Seitenabstand}
+\changepage{+4cm}{}{}{}{}{}{}{}{-5cm}
+\LoadLetterOption{sender}
+
+\begin{document}
+\setkomavar*{enclseparator}{Appendix}
+% Grund, Datum und Ort festlegen:
+\setkomavar{subject}{Motivationsschreiben}
+\setkomavar{date}{\today}
+\setkomavar{place}{Musterstadt}
+
+
+% Empfänger des Briefes
+\begin{letter}{
+    Muster AG \\
+    Human Ressources \\
+    Musterstraße 1\\
+    12345 Musterstadt
+}
+\opening{Sehr geehrte Damen und Herren,}
+
+% Sprache wählen, in welcher der Text verfasst werden soll ("english", or "ngerman")
+\selectlanguage{ngerman}
+%\parindent2mm
+Hier könnte ihre Werbung stehen... % Hier steht der Hauptteil des Briefes
+
+
+%\Sprace wählen für das Ende des Briefes{ngerman}
+\closing{Mit freundlichen Grüßen,}
+%\encl{annex}
+% Ende des Briefes
+\end{letter}
+
+\end{document}
+
