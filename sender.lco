@@ -11,6 +11,6 @@
 
 \setkomavar{signature}{
     \\[-3\baselineskip]
-    \includegraphics[width=5cm]{./signature.png} % .png mit der Unterschrift mit signature.png heißen und im selben Verzeichnis sein wie diese Datei
+    \includegraphics[width=5cm]{./signature.jpg} % .jpg/.png mit der Unterschrift mit signature.png heißen und im selben Verzeichnis sein wie diese Datei
 }
 \renewcommand*{\raggedsignature}{\raggedright}

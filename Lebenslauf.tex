@@ -1,0 +1,166 @@
+% Dokumententyp
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[ngerman]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\input{glyphtounicode}
+
+
+%%%%% Allgemeine Einstellungen %%%%
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%----------
+
+\begin{document}
+\vfill
+\begin{minipage}{0.15\linewidth}
+    \includegraphics[width=\linewidth]{Bild.jpg} % Bewerbungsfoto muss im selben Verzeichnis sein
+\end{minipage}\hfil
+\begin{minipage}{0.68\linewidth}
+\begin{center}
+      \textbf{\Huge \scshape Max Mustermann} \\ \vspace{1pt}
+    \small Anschrift: Musterstraße 1; 81111 Augsburg $|$
+    \small geb. 1. Mai 1985 in München $|$
+    \small Mobil: 0111/111111111 $|$ 
+    \href{mailto:x@x.com}{E-Mail: max.mustermann@gmail.com} $|$   
+\end{center}
+\end{minipage}
+
+
+%-----------Ausbildung-----------
+% ggf. neue Sektion einfügen
+\section{Ausbildung}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Schulausbildung am Gymnasium}{Musterstadt, DE}
+      {Allgemeine Hochschulreife, Abschluss im Jahr 2018}{September 2010 - Juli 2018}
+    \resumeSubheading
+      {Studium an der Technischen Universität}{Musterstadt, DE}
+      {Bachelor of Science, Ohne Abschluss}{Oktober 2017 - März 2018}
+  \resumeSubHeadingListEnd
+
+
+%-----------Berufliche Laufbahn-----------
+% ggf. neue Sektion einfügen
+\section{Berufliche Laufbahn}
+  \resumeSubHeadingListStart
+
+	\resumeSubheading
+      {Angestellter bei ....}{August 2013 - Juli 2017}
+      {......}{Musterstadt, DE}
+      \resumeItemListStart
+        \resumeItem{Aufgaben: .......}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {......}{Dezember 2010 - Oktober 2018}
+      {......}{Musterstadt, DE}
+      \resumeItemListStart
+        \resumeItem{Aufgaben: ......}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {......}{August 2018 - Oktober 2018}
+      {......}{Musterstadt, DE}
+      \resumeItemListStart
+        \resumeItem{Aufgaben: ......}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {......}{Juni 2020 - Oktober 2020}
+      {......}{Musterstadt, DE}
+      \resumeItemListStart
+        \resumeItem{Aufgaben: ......}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+
+%
+%-----------Kenntnisse und Fähigkeiten-----------
+\section{Kenntnisse und Fähigkeiten}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Sprachen}{: Englisch: Level C1, Französisch: Level B1, Spanisch: Level A1} \\
+     \textbf{PC-Kenntnisse}{: Sehr gute Microsoft Office - Kenntnisse (Word,
+PowerPoint, Excel), Kenntnisse mit Statistik-Programmen(R und SPSS) , LaTeX und Java - Kenntnisse} \\
+     \textbf{Führerschein}{: Klasse B} \\
+    }}
+ \end{itemize}
+
+
+%----------
+\end{document}
